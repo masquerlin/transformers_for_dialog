@@ -1,0 +1,42 @@
+boltons @ file:///C:/ci_311/boltons_1677729932371/work
+brotlipy==0.7.0
+certifi==2023.7.22
+cffi @ file:///C:/ci_311/cffi_1676423759166/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+colorama @ file:///C:/ci_311/colorama_1676422310965/work
+conda @ file:///D:/bld/conda_1694556136997/work
+conda-content-trust @ file:///C:/ci_311/conda-content-trust_1676467587370/work
+conda-libmamba-solver @ file:///C:/b/abs_5a9xvt2a3k/croot/conda-libmamba-solver_1685032355900/work/src
+conda-package-handling @ file:///C:/b/abs_ce4_vcfd0y/croot/conda-package-handling_1685024800103/work
+conda_package_streaming @ file:///C:/b/abs_88a7k_wmm1/croot/conda-package-streaming_1685019697115/work
+cryptography @ file:///C:/b/abs_b28tzldafl/croot/cryptography_1686613103834/work
+idna @ file:///C:/ci_311/idna_1676424932545/work
+joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1691577114857/work
+jsonpatch @ file:///tmp/build/80754af9/jsonpatch_1615747632069/work
+jsonpointer==2.1
+libmambapy @ file:///C:/b/abs_f0tnqlkcbn/croot/mamba-split_1685993165748/work/libmambapy
+menuinst @ file:///C:/ci_311/menuinst_1678730372782/work
+mkl-fft @ file:///C:/b/abs_19i1y8ykas/croot/mkl_fft_1695058226480/work
+mkl-random @ file:///C:/b/abs_edwkj1_o69/croot/mkl_random_1695059866750/work
+mkl-service==2.4.0
+numpy==1.26.0
+packaging @ file:///C:/b/abs_ed_kb9w6g4/croot/packaging_1678965418855/work
+pluggy @ file:///C:/ci_311/pluggy_1676422178143/work
+pycosat @ file:///C:/ci_311/pycosat_1676438455539/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pyOpenSSL @ file:///C:/b/abs_de215ipd18/croot/pyopenssl_1678965319166/work
+PySocks @ file:///C:/ci_311/pysocks_1676425991111/work
+python-dateutil==2.8.2
+pytz==2023.3.post1
+requests @ file:///C:/b/abs_41owkd5ymz/croot/requests_1682607524657/work
+ruamel.yaml @ file:///C:/ci_311/ruamel.yaml_1676439214109/work
+scikit-learn==1.3.1
+scipy==1.11.3
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1689261241048/work
+toolz @ file:///C:/ci_311/toolz_1676431406517/work
+tqdm @ file:///C:/b/abs_f76j9hg7pv/croot/tqdm_1679561871187/work
+tzdata==2023.3
+urllib3 @ file:///C:/b/abs_889_loyqv4/croot/urllib3_1686163174463/work
+win-inet-pton @ file:///C:/ci_311/win_inet_pton_1676425458225/work
+zstandard==0.19.0
