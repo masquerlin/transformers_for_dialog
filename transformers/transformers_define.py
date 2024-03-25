@@ -13,7 +13,7 @@ def clones(module, N):
 # 位置编码
 class PositionalEncoding(nn.Module):
     def __init__(self, d_model, dropout, max_len=5000):
-        super(PositionalEncoding).__init__()
+        super(PositionalEncoding, self).__init__()
         self.dropout = nn.Dropout(p=dropout)
         pe = torch.zeros(max_len,d_model)
         position = torch.arange(0,max_len).unsqueeze(1)
@@ -34,8 +34,8 @@ class PositionalEncoding(nn.Module):
 # self_attention 模块
 def attention(query, key, value, mask=None, dropout=None):
     d_k = query.size(-1)
-    scores = torch.matmul
-    (query, key.transpose(-2, -1)) \
+    print(f"d_k****************{d_k}")
+    scores = torch.matmul(query, key.transpose(-2, -1)) \
             / math.sqrt(d_k)
     if mask is not None:
         scores = scores.masked_fill(mask == 0, -1e9)
@@ -87,7 +87,7 @@ class LayerNorm(nn.Module):
 #残差连接
 class SublayerConnection(nn.Module):
     def __init__(self, size, dropout):
-        super(SublayerConnection).__init__()
+        super(SublayerConnection, self).__init__()
         self.norm = LayerNorm(size)
         self.dropout = nn.Dropout(dropout)
 
@@ -133,7 +133,7 @@ class Encoder(nn.Module):
 #下三角形式的注意力掩码，只能关注当前及之前的信息
 def subsequent_mask(size):
     attn_shape = (1, size, size)
-    subsequent_mask = np.triu(np.ones(attn_shape), k=1).astype('unit8')
+    subsequent_mask = np.triu(np.ones(attn_shape), k=1).astype('uint8')
     return torch.from_numpy(subsequent_mask) == 0
 
 #定义一个解码器层
@@ -168,7 +168,7 @@ class Decoder(nn.Module):
 #定义一个生成器，与词表一一对应
 class Generator(nn.Module):
     def __init__(self, d_model, vocab):
-        super(Generator).__init__()
+        super(Generator, self).__init__()
         self.proj = nn.Linear(d_model, vocab)
 
     def forward(self, x):
@@ -176,9 +176,9 @@ class Generator(nn.Module):
     
 
 #定义解码器和编码器    
-class EncoderDecode(nn.Module):
+class EncoderDecoder(nn.Module):
     def __init__(self, encoder, decoder, src_embed, tgt_embed, generator):
-        super(EncoderDecode, self).__init__()
+        super(EncoderDecoder, self).__init__()
         self.encoder = encoder
         self.decoder = decoder
         self.src_embed = src_embed
