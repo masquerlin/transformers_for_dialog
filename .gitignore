@@ -1,3 +1,6 @@
 __pycache__
 test.py
-/data
+/data/*.bped
+/data/*.en
+/data/*.zh-cn
+/data/*.codes
